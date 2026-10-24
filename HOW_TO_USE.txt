@@ -1,0 +1,49 @@
+HOW TO USE: cartesia-accent-translator
+====================================
+
+PURPOSE
+  Translate quotes, dialogue, phrases, or word lists into authentic accented
+  English phonetics using Cartesia's canonical broad phonemic IPA syntax
+  (<<ˈ|m|ɝ|d|ə|ˈ|b|i|ə|t|s>>). Delivers in-chat inline TTS-ready prompts and
+  copy-pasteable dictionary snippets without writing files to disk.
+
+CAPABILITIES
+  - In-chat, zero-disk on-demand phonetic translation
+  - Extensive accent library: East Asian, European, South Asian, Regional Anglophone, Fictional/Persona
+  - Strict Cartesia pipe-separated broad phonemic IPA (<<...>>)
+  - Isolated stress tokens (|ˈ|, |ˌ|) before stressed syllables
+  - Atomic diphthong & affricate protection (|aɪ|, |eɪ|, |oʊ|, |tʃ|, |dʒ|)
+  - Vowel elongation and cadence modulation (|l|aɪ|aɪ|k|)
+  - Inline TTS text + word-by-word phonetics breakdown table + JSON snippet
+
+USE CASES
+  - Convert dialogue line into Scottish, French, German, or Russian accent for Cartesia Sonic
+  - Build custom pronunciation dictionary entries for regional character speech
+  - Generate phonetically authentic non-native English line reads
+  - Test vowel drawls or non-native cadence in voice synthesis
+
+IDEAS
+  - Provide a dialogue line and ask for 3 distinct regional accent variations
+  - Combine with cartesia-voice-clone-extractor for complete accent-cloned personas
+  - Translate technical jargon into a specific localized dialect
+
+PROMPTS YOU CAN PASTE
+  /cartesia-accent-translator
+
+  Translate to French accent: "The meeting starts at seven o'clock tonight."
+
+  How would a Scottish speaker say: "I told you we cannot do that right now."
+
+  Accent translation for: "Welcome to our laboratory, my dear friend." in Russian accent.
+
+  Give me the Cartesia phonetics for "water bottle" in British Cockney.
+
+EXAMPLE FLOW
+  You:   Translate to German accent: "We need to verify the telemetry data."
+  Model: [Inline Cartesia TTS Text]
+         "We need to <<ˈ|v|ɛ|ɹ|ɪ|f|aɪ>> ze <<t|ə|ˈ|l|ɛ|m|ə|t|ɹ|i>> <<ˈ|d|a|t|ə>>."
+         [Word-by-word breakdown table]
+         [Cartesia dictionary JSON snippet]
+
+DEFAULT GOALS IF YOU DON'T NAME ONE
+  Translate a sample sentence into French, German, and Japanese accents with Cartesia pipe-separated IPA.
